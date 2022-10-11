@@ -1,0 +1,72 @@
+#hero {
+	background-image: linear-gradient(180deg, getColor(main-color) 25%, getColor(alt-color));
+	height:100vh;
+	position:relative;
+}
+
+#hero-events {
+	height: 100vh;
+	position:relative;
+
+	.section-title {
+		@include section-title;
+		text-align: center;
+	}
+
+	.section-heading {
+		@include section-title;
+		text-align: center;
+		font-size: 3rem;
+	}
+}
+
+.event-img {
+	max-width: 100vw;
+	height: 100vh;
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		object-position: center center;
+	}
+}
+
+#hero-cont {
+	overflow: hidden;
+	position:relative;
+
+	.section-title {
+		@include section-title;
+	}
+
+	.section-par {
+		font-size: 1.5rem;
+		padding-left: 2rem;
+	}
+
+	.section-text {
+		padding-left: 15rem;
+	}
+
+	.col-lg-6{
+		height: 100vh;
+
+		img {
+			width:100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: left 50px;
+			transform: scaleX(-1);
+		}
+
+		img.red {
+			transform: scaleX(1);
+		}
+	}
+}

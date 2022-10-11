@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+	font-size: 14px;
+}
+
+body, html {
+    overflow-x:hidden;
+    transition: all 0.5s;
+}
+
+body {
+    font-family: $body-font;
+    background-color: getColor(main-color);
+	color: getColor(text-color);
+	position:relative;
+}
+
+a {
+    text-decoration:none;
+}
+

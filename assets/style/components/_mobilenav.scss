@@ -1,0 +1,39 @@
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	z-index: 110;
+	background-color: getColor(main-color);
+	padding-top: 120px;
+	transition: 0.4s;
+	transition-delay: 0.2s;
+	transition-timing-function: ease-in-out;
+
+	.menu-close {
+		position: absolute;
+		top:30px;
+		right: 30px;
+		z-index: 99;
+	}
+
+	a {
+		font-size: 11px;
+		display: block;
+		width: 100%;
+		max-width: 200px;
+		margin: 0 auto 12px;
+		text-align: center;
+		padding: 12px 0;
+		color: #FFF;
+		text-decoration: none;
+        text-transform: uppercase;
+	}
+}
+
+
+.mobile-nav.is-active {
+	right: 0%;
+}

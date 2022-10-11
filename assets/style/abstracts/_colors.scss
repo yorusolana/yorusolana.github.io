@@ -1,0 +1,19 @@
+$colors: (
+  theme: (
+    'main-color': #323555,
+    'alt-color': #1292AF,
+	'text-color': #ffffff,
+	'placeholder': #252525,
+	'values-color': #1292AFd6,
+  ),
+);
+
+:root {
+  @each $theme, $color in map-get($colors, theme) {
+    --#{$theme}: #{$color};
+  }
+}
+
+@function getColor($color) {
+  @return var(--#{$color});
+}

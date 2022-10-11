@@ -1,0 +1,149 @@
+$breakpoint-mt: 992px;
+
+@media screen and (max-width:1526px) {
+    
+	#hero-cont {
+
+		.section-title {
+			font-size: 3.5rem;
+			letter-spacing: -2.077px;
+		}
+
+		.section-par {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media screen and (max-width:1139px) {
+    
+	#hero-cont {
+
+		.section-title {
+			font-size: 2.5rem;
+		}
+
+		.section-par {
+			font-size: .8rem;
+		}
+	}
+}
+
+@media screen and (max-width:$breakpoint-mt) {
+	// header 
+	header {
+		background-color: getColor(main-color);
+		//border-bottom: 3px solid getColor(text-color);
+
+		.logo {
+
+			img {
+				width: 70px;
+				height: auto;
+			}
+		}
+
+		.hamburger {
+			
+			i {
+				transform: scaleX(1.6);
+				padding-right: 8px;
+			}
+		}
+	}
+
+	footer {
+
+		.beam {
+			position:absolute;
+			top: -20px;
+			img {
+				width:100%;
+				height: 100%;		
+			}
+		}
+	}
+
+    // index
+
+	#hero {
+		background-image: none;
+
+		.hero-img-mobile {
+			height:100vh;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-position: 0 120px;
+				object-fit: cover;
+				filter: drop-shadow(55px -35px 0 #1D1D31);
+			}
+		}
+	}
+
+	#floor {
+		background-color: transparent;
+
+		.shad, .hero-container {
+			display: none;
+		}
+
+		.cta-container {
+			right:0;
+			left:0;
+			margin: 0 auto;
+			top: 55px;
+			transform: scale(.8,.8);
+		}
+	}
+	// manifesto & yoru
+	#hero-cont {
+		background-image: linear-gradient(#000000ab, #000000ab), url(/assets/images/manifesto-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+
+		.section-title {
+			margin-bottom: 3rem;
+			padding-left: 2rem;
+		}
+
+		.section-par {
+			font-size: 1rem;
+			padding-left: 2rem;
+		}
+
+		.section-text {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			align-items: flex-start !important;
+			padding-top: 10rem;
+		}
+
+		.section-photo {
+			display: none;
+		}
+	}
+
+	// values 
+	#values {
+		background-image: linear-gradient(#000000ab, #000000ab), url(/assets/images/values-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 150vh;
+		padding-top: 5rem;
+		padding-bottom: 12rem;
+
+		.section-title {
+			font-size: 2.5rem;
+			margin-top: 5rem;
+		}
+
+		.values-box {
+			background-color: getColor(values-color);
+			padding: .5rem;
+		}
+	}
+}

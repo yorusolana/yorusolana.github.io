@@ -1,0 +1,18 @@
+// abstracts
+@import 'abstracts/variables';
+@import 'abstracts/typography'; 
+@import 'abstracts/colors';
+@import 'abstracts/mixins';
+// base 
+@import 'base/reset';
+//components
+@import 'components/mobilenav';
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/hero';
+@import 'layout/floor';
+@import 'layout/values';
+@import 'layout/error';
+// mq
+@import 'base/_mq'; 

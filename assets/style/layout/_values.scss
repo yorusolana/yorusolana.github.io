@@ -1,0 +1,19 @@
+#values {
+	height:100vh;
+
+	.section-title {
+		@include section-title;
+	}
+
+	.values-box {
+		background-color: getColor(alt-color);
+		padding: 2.5rem;
+
+		.values-title {
+			font-weight: 700;
+			border-bottom: 3px solid getColor(text-color);
+			padding-bottom: 5px;
+			margin-bottom: 20px;
+		}
+	}
+}

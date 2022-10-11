@@ -1,0 +1,17 @@
+#error {
+	height: 100vh;
+
+	.error-details {
+
+		.error-title {
+			font-size: 5rem;
+			font-weight: 800;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		.error-desc {
+			text-align: center;
+		}
+	}
+}

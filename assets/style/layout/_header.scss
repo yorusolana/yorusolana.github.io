@@ -1,0 +1,43 @@
+header {
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+		.hamburger {
+			i {
+				font-size: 2rem;
+			}
+		}
+
+		.logo {
+
+			img {
+				width: 100px;
+				height: auto;
+			}
+		}
+
+		.nav {
+			column-gap: 20px;
+
+			a {
+				font-family: $body-font;
+				text-transform: uppercase;
+				color: getColor(text-color);
+				font-size: 1.3rem;
+			}
+		}
+
+		.socials {
+			margin-left: 2rem;
+			column-gap: 20px;
+
+			i {
+				color: getColor(text-color);
+				font-size: 2rem;
+			}
+		}
+	
+}
